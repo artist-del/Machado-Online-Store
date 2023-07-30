@@ -1,0 +1,57 @@
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\ApplicationInsights.config
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\csc.exe
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\vbc.exe
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\VBCSCompiler.exe
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Machado Store.dll.config
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Machado Store.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Machado Store.pdb
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Antlr3.Runtime.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.Web.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Newtonsoft.Json.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Helpers.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Mvc.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Optimization.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Razor.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.WebPages.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.WebPages.Razor.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\WebGrease.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.Web.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Helpers.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Mvc.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Optimization.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.Razor.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.WebPages.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\System.Web.WebPages.Razor.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Antlr3.Runtime.pdb
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\Newtonsoft.Json.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\obj\Debug\Machado Store.csprojResolveAssemblyReference.cache
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\obj\Debug\Machado Store.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\obj\Debug\Machado Store.pdb
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\EntityFramework.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\EntityFramework.SqlServer.dll
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\EntityFramework.xml
+C:\Users\ARTZ AYATE RASE\Documents\Capstone Project 2022\Machado Store\Machado Store\Machado Store\bin\EntityFramework.SqlServer.xml

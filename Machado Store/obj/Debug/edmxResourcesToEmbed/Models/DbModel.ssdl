@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="machadoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="order_list">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="product_Id" Type="int" />
+    <Property Name="customer_Id" Type="int" />
+    <Property Name="tbl_date" Type="date" />
+    <Property Name="tbl_price" Type="money" />
+    <Property Name="tbl_quantity" Type="int" />
+    <Property Name="tbl_status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tbl_username" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_password" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_email" Type="varchar" MaxLength="155" Nullable="false" />
+    <Property Name="tbl_fname" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_customer">
+    <Key>
+      <PropertyRef Name="customer_Id" />
+    </Key>
+    <Property Name="customer_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tbl_fname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_mname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_lname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_username" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_password" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_product">
+    <Key>
+      <PropertyRef Name="product_Id" />
+    </Key>
+    <Property Name="product_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tbl_productName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_price" Type="money" />
+    <Property Name="tbl_description" Type="varchar(max)" />
+    <Property Name="tbl_quantity" Type="int" />
+    <Property Name="product_img" Type="varchar" MaxLength="255" />
+    <Property Name="tbl_wholesale" Type="money" />
+  </EntityType>
+  <EntityType Name="tbl_staff">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tbl_fname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_mname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_lname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_email" Type="varchar" MaxLength="155" Nullable="false" />
+    <Property Name="tbl_username" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="tbl_password" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__order_lis__custo__2B3F6F97">
+    <End Role="tbl_customer" Type="Self.tbl_customer" Multiplicity="0..1" />
+    <End Role="order_list" Type="Self.order_list" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_customer">
+        <PropertyRef Name="customer_Id" />
+      </Principal>
+      <Dependent Role="order_list">
+        <PropertyRef Name="customer_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__order_lis__produ__2A4B4B5E">
+    <End Role="tbl_product" Type="Self.tbl_product" Multiplicity="0..1" />
+    <End Role="order_list" Type="Self.order_list" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_product">
+        <PropertyRef Name="product_Id" />
+      </Principal>
+      <Dependent Role="order_list">
+        <PropertyRef Name="product_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="machadoModelStoreContainer">
+    <EntitySet Name="order_list" EntityType="Self.order_list" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_admin" EntityType="Self.tbl_admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_customer" EntityType="Self.tbl_customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_product" EntityType="Self.tbl_product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_staff" EntityType="Self.tbl_staff" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__order_lis__custo__2B3F6F97" Association="Self.FK__order_lis__custo__2B3F6F97">
+      <End Role="tbl_customer" EntitySet="tbl_customer" />
+      <End Role="order_list" EntitySet="order_list" />
+    </AssociationSet>
+    <AssociationSet Name="FK__order_lis__produ__2A4B4B5E" Association="Self.FK__order_lis__produ__2A4B4B5E">
+      <End Role="tbl_product" EntitySet="tbl_product" />
+      <End Role="order_list" EntitySet="order_list" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

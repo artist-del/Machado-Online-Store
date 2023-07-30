@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="machadoModelStoreContainer" CdmEntityContainer="machadoEntities">
+    <EntitySetMapping Name="order_list">
+      <EntityTypeMapping TypeName="machadoModel.order_list">
+        <MappingFragment StoreEntitySet="order_list">
+          <ScalarProperty Name="tbl_status" ColumnName="tbl_status" />
+          <ScalarProperty Name="tbl_quantity" ColumnName="tbl_quantity" />
+          <ScalarProperty Name="tbl_price" ColumnName="tbl_price" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="product_Id" ColumnName="product_Id" />
+          <ScalarProperty Name="customer_Id" ColumnName="customer_Id" />
+          <ScalarProperty Name="tbl_date" ColumnName="tbl_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_admin">
+      <EntityTypeMapping TypeName="machadoModel.tbl_admin">
+        <MappingFragment StoreEntitySet="tbl_admin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="tbl_username" ColumnName="tbl_username" />
+          <ScalarProperty Name="tbl_password" ColumnName="tbl_password" />
+          <ScalarProperty Name="tbl_email" ColumnName="tbl_email" />
+          <ScalarProperty Name="tbl_fname" ColumnName="tbl_fname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_customer">
+      <EntityTypeMapping TypeName="machadoModel.tbl_customer">
+        <MappingFragment StoreEntitySet="tbl_customer">
+          <ScalarProperty Name="customer_Id" ColumnName="customer_Id" />
+          <ScalarProperty Name="tbl_fname" ColumnName="tbl_fname" />
+          <ScalarProperty Name="tbl_mname" ColumnName="tbl_mname" />
+          <ScalarProperty Name="tbl_lname" ColumnName="tbl_lname" />
+          <ScalarProperty Name="tbl_email" ColumnName="tbl_email" />
+          <ScalarProperty Name="tbl_username" ColumnName="tbl_username" />
+          <ScalarProperty Name="tbl_password" ColumnName="tbl_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_product">
+      <EntityTypeMapping TypeName="machadoModel.tbl_product">
+        <MappingFragment StoreEntitySet="tbl_product">
+          <ScalarProperty Name="product_Id" ColumnName="product_Id" />
+          <ScalarProperty Name="tbl_productName" ColumnName="tbl_productName" />
+          <ScalarProperty Name="tbl_price" ColumnName="tbl_price" />
+          <ScalarProperty Name="tbl_description" ColumnName="tbl_description" />
+          <ScalarProperty Name="tbl_quantity" ColumnName="tbl_quantity" />
+          <ScalarProperty Name="product_img" ColumnName="product_img" />
+          <ScalarProperty Name="tbl_wholesale" ColumnName="tbl_wholesale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_staff">
+      <EntityTypeMapping TypeName="machadoModel.tbl_staff">
+        <MappingFragment StoreEntitySet="tbl_staff">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="tbl_fname" ColumnName="tbl_fname" />
+          <ScalarProperty Name="tbl_mname" ColumnName="tbl_mname" />
+          <ScalarProperty Name="tbl_lname" ColumnName="tbl_lname" />
+          <ScalarProperty Name="tbl_email" ColumnName="tbl_email" />
+          <ScalarProperty Name="tbl_username" ColumnName="tbl_username" />
+          <ScalarProperty Name="tbl_password" ColumnName="tbl_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,523 @@
+﻿@model IEnumerable<Machado_Store.Models.tbl_product>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <link href="~/Admin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Custom Theme files -->
+    <link href="~/Admin/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--js-->
+    <script src="~/Admin/js/jquery-2.1.1.min.js"></script>
+    <!--icons-css-->
+    <link href="~/Admin/css/font-awesome.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href='//fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    <!--static chart-->
+    <script src="~/Admin/js/Chart.min.js"></script>
+    <!--//charts-->
+    <!-- geo chart -->
+    <script src="//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <script>window.modernizr || document.write('<script src="lib/modernizr/modernizr-custom.js"><\/script>')</script>
+    <!--<script src="lib/html5shiv/html5shiv.js"></script>-->
+    <!-- Chartinator  -->
+    <script src="~/Admin/js/chartinator.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+
+            var chart3 = $('#geoChart').chartinator({
+                tableSel: '.geoChart',
+
+                columns: [{role: 'tooltip', type: 'string'}],
+
+                colIndexes: [2],
+
+                rows: [
+                    ['China - 2015'],
+                    ['Colombia - 2015'],
+                    ['France - 2015'],
+                    ['Italy - 2015'],
+                    ['Japan - 2015'],
+                    ['Kazakhstan - 2015'],
+                    ['Mexico - 2015'],
+                    ['Poland - 2015'],
+                    ['Russia - 2015'],
+                    ['Spain - 2015'],
+                    ['Tanzania - 2015'],
+                    ['Turkey - 2015']],
+
+                ignoreCol: [2],
+
+                chartType: 'GeoChart',
+
+                chartAspectRatio: 1.5,
+
+                chartZoom: 1.75,
+
+                chartOffset: [-12,0],
+
+                chartOptions: {
+
+                    width: null,
+
+                    backgroundColor: '#fff',
+
+                    datalessRegionColor: '#F5F5F5',
+
+                    region: 'world',
+
+                    resolution: 'countries',
+
+                    legend: 'none',
+
+                    colorAxis: {
+
+                        colors: ['#679CCA', '#337AB7']
+                    },
+                    tooltip: {
+
+                        trigger: 'focus',
+
+                        isHtml: true
+                    }
+                }
+
+
+            });
+        });
+    </script>
+    <!--geo chart-->
+    <!--skycons-icons-->
+    <script src="~/Admin/js/skycons.js"></script>
+    <!--//skycons-icons-->
+</head>
+<body>
+    <div class="page-container">
+        <div class="left-content">
+            <div class="mother-grid-inner">
+                <!--header start here-->
+                <div class="header-main">
+                    <div class="header-left">
+                        <div class="logo-name">
+                            <a href="@Url.Action("Index","Admin")">
+                                <h1>Machado</h1>
+                                <!--<img id="logo" src="" alt="Logo"/>-->
+                            </a>
+                        </div>
+                        <!--search-box-->
+                       <!--//end-search-box-->
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="header-right">
+
+                        <!--notification menu end -->
+                        <div class="profile_details">
+                            <ul>
+                                <li class="dropdown profile_details_drop">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <div class="profile_img">
+                                            <span class="prfil-img"><img src="~/Admin/images/p1.png" alt=""> </span>
+                                            <div class="user-name">
+                                                <p>Machado Store</p>
+                                                <span>Staff</span>
+                                            </div>
+                                            <i class="fa fa-angle-down lnr"></i>
+                                            <i class="fa fa-angle-up lnr"></i>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu drp-mnu">
+
+                                        <li> <a href="@Url.Action("Logout","UserStaff")"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <!--heder end here-->
+                <!-- script-for sticky-nav -->
+                <script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-main").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop();
+				if(scrollpos >=navoffeset){
+					$(".header-main").addClass("fixed");
+				}else{
+					$(".header-main").removeClass("fixed");
+				}
+			 });
+
+		});
+                </script>
+                <!-- /script-for sticky-nav -->
+                <!---Modal Start Here-->
+                <!--Create Modal-->
+                <div class="modal fade" id="modalCreate">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h2>New Product</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form method="post" enctype="multipart/form-data" id="createForm" onsubmit="return createData(this)">
+                                    <div class="form-group">
+                                        <label>Product Name</label>
+                                        <input type="text" name="tbl_productName" class="form-control" placeholder="Product Name" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Price</label>
+                                        <input type="number" name="tbl_price" class="form-control" placeholder="Price" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <input type="text" name="tbl_description" class="form-control" placeholder="Description" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Quantity</label>
+                                        <input type="number" name="tbl_quantity" class="form-control" placeholder="Quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Whole Sale Price</label>
+                                        <input type="number" name="tbl_wholesale" class="form-control" placeholder="Whole Sale Price" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>ImageUpload</label>
+                                        <input type="file" name="ImageUpload" class="form-control" />
+                                    </div>
+
+                                    <button class="btn btn-primary">Save</button>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Edit Modal-->
+                <div class="modal fade" id="editModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h2>Edit Product</h2>
+                            </div>
+
+                            <div class="modal-body">
+                                <form method="post" enctype="multipart/form-data" id="editForm" onsubmit="return editData(this)">
+                                    <input type="hidden" name="product_Id" id="productId" />
+                                    <div class="form-group">
+                                        <label>Product Name</label>
+                                        <input type="text" name="tbl_productName" class="form-control" placeholder="Product Name" id="tbl_productName" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Price</label>
+                                        <input type="number" name="tbl_price" class="form-control" placeholder="Price" id="tbl_price" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <input type="text" name="tbl_description" class="form-control" placeholder="Description" id="tbl_description" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Quantity</label>
+                                        <input type="number" name="tbl_quantity" class="form-control" placeholder="Quantity" id="tbl_quantity" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Whole Sale Price</label>
+                                        <input type="number" name="tbl_wholesale" class="form-control" placeholder="Whole Sale Price" id="tbl_wholesale" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>ImageUpload</label>
+                                        <input type="file" name="ImageUpload" class="form-control" />
+                                    </div>
+
+                                    <button class="btn btn-primary">Update</button>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Delete Modal-->
+                <div class="modal fade" id="delModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h2>Delete</h2>
+                            </div>
+
+                            <div class="modal-body">
+                                <input type="hidden" ]]]] id="del_Id" />
+                                <h1>Do you want to Delete?</h1>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" id="btnDel">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Modal Here-->
+                <!--inner block start here-->
+                <div class="inner-block">
+                    <!--market updates updates-->
+                    <!--market updates end here-->
+                    <!--mainpage chit-chating-->
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalCreate">Add Product</button>
+                    <div class="chit-chat-layer1">
+                        <div class="col-md-12 chit-chat-layer1-left">
+                            <div class="work-progres">
+                                <div class="chit-chat-heading">
+                                    Product List
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover" id="orderTable">
+                                        <thead>
+                                            <tr>
+
+                                                <th>Product Name</th>
+                                                <th>Retail Price</th>
+
+                                                <th>WholeSale Price</th>
+                                                <th>Description</th>
+                                                <th>Quantity</th>
+                                                <th>Product Image</th>
+
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+
+                                                    <td>@item.tbl_productName</td>
+                                                    <td>@item.tbl_price</td>
+
+                                                    <td>@item.tbl_wholesale</td>
+                                                    <td>@item.tbl_description</td>
+                                                    <td>@item.tbl_quantity</td>
+                                                    <td><img src="~/AppFile/@item.product_img" alt="Product" height="100px" width="100px" style="border: solid black 1px; border-radius: 10px" /></td>
+
+                                                    <td>
+                                                        <button class="btn btn-info" data-toggle="modal" data-target="#editModal" onclick="getId(@item.product_Id)">Edit</button>
+                                                        <button class="btn btn-danger" data-toggle="modal" data-target="#delModal" onclick="getDelId(@item.product_Id)">Delete</button>
+                                                    </td>
+
+                                                </tr>
+                                            }
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <link href="~/Content/datatables.min.css" rel="stylesheet" />
+
+                        <script src="~/Scripts/datatables.min.js"></script>
+
+                        <script>
+                            $(document).ready(function () {
+                                $('#orderTable').DataTable();
+                            })
+                        </script>
+
+                        <div class="clearfix"> </div>
+                    </div>
+
+                    <!---Modal JavaScript Here-->
+                    <script>
+                        //create function
+                        function createData(formData) {
+                            var ajaxConfig = {
+                                type: 'post',
+                                url: '/Product/Create',
+                                data: new FormData(formData),
+                                success: function (e) {
+                                    if (e.status == true) {
+                                        alert("Data Successfully Save!");
+                                        window.location.href = "/UserStaff/Product";
+                                    }
+                                    else {
+                                        alert("Something Wrong!");
+                                    }
+                                }
+                            }
+
+                            if ($(formData).attr('enctype') == "multipart/form-data") {
+                                ajaxConfig["contentType"] = false;
+                                ajaxConfig["processData"] = false;
+                            }
+
+                            $.ajax(ajaxConfig);
+                            return false;
+                        }
+
+                        //Getting Product Id
+                        function getId(data) {
+                            $.ajax({
+                                url: "/Product/GetProductId?id=" + data,
+                                type: 'get',
+                                success: (e) => {
+                                    let obj = JSON.parse(e);
+
+                                    $('#productId').val(obj.product_Id);
+                                    $('#tbl_productName').val(obj.tbl_productName);
+                                    $('#tbl_price').val(obj.tbl_price);
+                                    $('#tbl_description').val(obj.tbl_description);
+                                    $('#tbl_quantity').val(obj.tbl_quantity);
+                                    $('#tbl_wholesale').val(obj.tbl_wholesale);
+                                }
+                            })
+                        }
+
+                        //Updating Product
+                        function editData(formData){
+                            var ajaxConfig = {
+                                type: 'post',
+                                url: '/Product/Update',
+                                data: new FormData(formData),
+                                success: function (e) {
+                                    if (e.status == true) {
+                                        alert("Data Successfully Save!");
+                                        window.location.href = "/UserStaff/Product";
+                                    }
+                                    else {
+                                        alert("Something Wrong!");
+                                    }
+                                }
+                            }
+
+                            if ($(formData).attr('enctype') == "multipart/form-data") {
+                                ajaxConfig["contentType"] = false;
+                                ajaxConfig["processData"] = false;
+                            }
+
+                            $.ajax(ajaxConfig);
+                            return false;
+                        }
+
+                        //Getting Id to be delete
+                        function getDelId(id){
+                            $('#del_Id').val(id);
+                        }
+
+                        //Deleting data
+                        let delBtn = document.getElementById("btnDel");
+                        let delId = document.getElementById("del_Id");
+
+                        delBtn.addEventListener('click', () => {
+                            $.ajax({
+                                type: 'post',
+                                url: '/Product/Delete',
+                                data: { id: delId.value },
+                                success: (e) => {
+                                    if (e.status == true) {
+                                        alert("Successfully Deleted!");
+                                        window.location.href = "/UserStaff/Product";
+                                    }
+                                    else {
+                                        alert("Something Wrong please contact the Developer!");
+                                    }
+                                }
+                            })
+                        })
+
+                    </script>
+
+                    <!--main page chit chating end here-->
+                    <!--main page chart start here-->
+                    <!--main page chart layer2-->
+                    <!--climate start here-->
+                    <!--climate end here-->
+                </div>
+                <!--inner block end here-->
+                <!--copy rights start here-->
+
+
+                <div class="copyrights">
+                    <p>© 2022 All Rights Reserved | </p>
+                </div>
+                <!--COPY rights end here-->
+            </div>
+        </div>
+        <!--slider menu-->
+        <div class="sidebar-menu">
+            <div class="logo">
+                <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#">
+                    <span id="logo"></span>
+                    <!--<img id="logo" src="" alt="Logo"/>-->
+                </a>
+            </div>
+            <div class="menu">
+                <ul id="menu">
+                    <li id="menu-home"><a href="@Url.Action("Index","UserStaff")"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+                    <li><a href="@Url.Action("Product","UserStaff")"><i class="fa fa-book nav_icon"></i><span>Manage Product</span></a></li>
+                    <li><a href="@Url.Action("OrderList","UserStaff")"><i class="fa fa-book nav_icon"></i><span>Manage Order</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!--slide bar menu end here-->
+    <script>
+var toggle = true;
+
+$(".sidebar-icon").click(function() {
+  if (toggle)
+  {
+    $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+    $("#menu span").css({"position":"absolute"});
+  }
+  else
+  {
+    $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+    setTimeout(function() {
+      $("#menu span").css({"position":"relative"});
+    }, 400);
+  }
+                toggle = !toggle;
+            });
+    </script>
+    <!--scrolling js-->
+    <script src="~/Admin/js/jquery.nicescroll.js"></script>
+    <script src="~/Admin/js/scripts.js"></script>
+    <!--//scrolling js-->
+    <script src="~/Admin/js/bootstrap.js"> </script>
+    <!-- mother grid end here-->
+</body>
+</html>
+
+
+

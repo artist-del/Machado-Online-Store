@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Machado_Store.Models.tbl_product>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js" defer></script>
+
+    <title>Print</title>
+</head>
+<body>
+    <div class="container" style="margin-top: 50px;">
+        <button onclick="myApp.printTable()" class="btn btn-default">Print</button>
+        <div id="tab">
+            <h2 style="text-align:center; color:#ff6a00;">Machado Store Inventory</h2>
+            <center>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+
+                                <th>Product Name</th>
+                                <th>Retail Price</th>
+
+                                <th>WholeSale Price</th>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Product Image</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in Model)
+                        {
+                                <tr>
+
+                                    <td>@item.tbl_productName</td>
+                                    <td>@item.tbl_price</td>
+
+                                    <td>@item.tbl_wholesale</td>
+                                    <td>@item.tbl_description</td>
+                                    <td>@item.tbl_quantity</td>
+                                    <td><img src="~/AppFile/@item.product_img" alt="Product" height="50px" width="50px" style="border: solid black 1px; border-radius: 10px" /></td>
+
+
+                                </tr>
+                        }
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </center>
+        </div>
+       
+    </div>
+
+    <script>
+        let myApp = new function () {
+            this.printTable = function () {
+                let tab = document.getElementById('tab');
+                let win = window.open('', '', 'height=700,width=700');
+                win.document.write(tab.outerHTML);
+                win.document.close();
+                win.print();
+            }
+        }
+    </script>
+</body>
+</html>
